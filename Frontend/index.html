@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ransome Defender</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">🛡️ <span>RANSOME</span> <b>DEFENDER</b></div>
+  <nav>
+    <a href="#home">Home</a><a href="#scan">Scan</a><a href="#monitor">Monitoring</a>
+    <a href="#threats">Threats</a><a href="#recovery">Recovery</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="tag">CYBERSECURITY • RANSOMWARE PROTECTION</p>
+    <h1>Protect Your Data.<br><span>Defeat Ransomware.</span></h1>
+    <p>Monitor file activity, detect suspicious ransomware behavior and respond quickly to protect valuable data.</p>
+    <a class="btn" href="#scan">🔍 Scan Now</a>
+  </div>
+  <div class="shield">🛡️<small>SYSTEM<br>PROTECTED</small></div>
+</section>
+
+<section class="cards">
+  <div><strong>1,248</strong><small>Files Monitored</small></div>
+  <div><strong>03</strong><small>Threats Detected</small></div>
+  <div><strong>96%</strong><small>Security Score</small></div>
+  <div><strong id="backendBadge">Checking…</strong><small>Backend Status</small></div>
+</section>
+
+<section id="scan" class="panel">
+  <h2>🔍 Scan Files</h2><p>Upload any file. Windows PE executables are scored by the trained model; other files are checked with ransomware heuristics.</p>
+  <div class="scanbox">
+    <input type="file" id="fileInput">
+    <button class="btn" type="button" onclick="startScan()">START SCAN</button>
+    <div id="scanResult" class="result">Ready to scan.</div>
+  </div>
+</section>
+
+<section id="monitor" class="panel">
+  <h2>📡 Real-Time Monitoring</h2>
+  <div class="status" id="systemStatus">Checking backend…</div>
+  <table><tr><th>File</th><th>Activity</th><th>Status</th></tr>
+  <tr><td>document.docx</td><td>Modified</td><td class="safe">SAFE</td></tr>
+  <tr><td>photos.zip</td><td>Renamed</td><td class="warn">SUSPICIOUS</td></tr>
+  <tr><td>data.enc</td><td>Encryption pattern</td><td class="danger">BLOCKED</td></tr></table>
+</section>
+
+<section id="threats" class="panel">
+  <h2>🚨 Threat Detection</h2>
+  <div class="alert" id="threatAlert"><b>No live scan alerts yet</b><br>Scan a PE file to send results to this panel. High-risk classifications will appear here.</div>
+</section>
+
+<section id="recovery" class="panel">
+  <h2>♻️ Recovery</h2><p>Restore protected files from a trusted backup.</p>
+  <button class="btn" type="button" onclick="alert('Recovery is not connected to a backup store in this prototype. Restore from your own trusted backup.')">RESTORE FILES</button>
+</section>
+
+<section id="contact" class="panel">
+  <h2>📞 Contact Us</h2><p>Have a cybersecurity concern? Send us a message.</p>
+  <p>Email: ransome.defender@gmail.com</p>
+</section>
+</main>
+<footer>RANSOME DEFENDER • DETECT. PROTECT. DEFEND.</footer>
+<script src="script.js"></script>
+</body>
+</html>
