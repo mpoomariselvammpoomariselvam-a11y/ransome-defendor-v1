@@ -1,4 +1,4 @@
-const API_BASE = 'https://YOUR-BACKEND-VERCEL-URL.vercel.app';
+const API_BASE = 'https://ransome-defendor-v1-fhep.vercel.app/';
 
 function apiUrl(path) {
   return `${API_BASE}${path}`;
