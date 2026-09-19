@@ -1,5 +1,5 @@
 const API_BASE = (() => {
-  if (window.location.protocol === 'file:') return 'http://127.0.0.1:8000';
+  if (window.location.protocol === 'file:') return 'https://ransome-defendor-v1-fhep.vercel.app/';
   if (['8000', ''].includes(window.location.port)) return '';
   return 'http://127.0.0.1:8000';
 })();
